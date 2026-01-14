@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+    </head>
+    <body>
+        <!--#include file="./_header.html"-->
+        <div id="wrap">
+            <div id="contents">
+                <div class="inner">
+                    <!-- 타이틀 영역 -->
+                    <div class="titArea moCol">
+                        <div class="titBox">
+                            <h3>기본 근무 계획 등록</h3>
+                        </div>
+                        <div class="pathBox">
+                            <ul>
+                                <li class="home"><a href="#none">홈</a></li>
+                                <li>근무계획</li>
+                                <li>사용자</li>
+                                <li>기본근무계획등록</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conArea">
+                        <!-- 검색 영역 -->
+                        <div class="searchBox">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>사번</dt>
+                                        <dd>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" value="012345678" readonly />
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>조회날짜</dt>
+                                        <dd>
+                                            <div class="datepickerWrap" style="width: 50%">
+                                                <div>
+                                                    <input type="text" id="" value="2025-01-22" class="datepicker md" />
+                                                </div>
+                                            </div>
+                                            <div class="formArea" style="width: 100%">
+                                                <select class="md">
+                                                    <option>선택</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="searchBtn">
+                                        <button class="btn md primary-70">
+                                            <i class="ico icoSearchW">검색 아이콘</i>
+                                            <span>검색</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h4>월 근로시간 정보</h4>
+                            </div>
+                            <div class="btnBox">
+                                <button type="button" class="btn sm primary-lignt text icon right settingPriLight">
+                                    대상자 설정
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 테이블 영역 -->
+                        <div class="tblList" style="flex: unset">
+                            <table>
+                                <caption>
+                                    월 근로시간 정보
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 120px" />
+                                    <col style="width: 120px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 140px" />
+                                    <col style="width: 280px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">해당월</th>
+                                        <th rowspan="2">월 의무 <br />근로시간(A)</th>
+                                        <th colspan="2">총 근로실적</th>
+                                        <th colspan="3">계획 필요시간</th>
+                                    </tr>
+                                    <tr>
+                                        <th>월(B)</th>
+                                        <th>누적 과·부족 시간(C)</th>
+                                        <th>월(A)-(B)</th>
+                                        <th>주</th>
+                                        <th>주 최대 신청 가능 시간 <br />(A)-(B)-(잔여 필수 근로시간)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2025.10</td>
+                                        <td>144h</td>
+                                        <td>16h</td>
+                                        <td>-8h</td>
+                                        <td>128h</td>
+                                        <td>48h</td>
+                                        <td>88h</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <i class="ico icoNodata">데이터없음</i>
+                                    <div class="resultTxt">등록된 데이터가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea moCol">
+                            <div class="titBox">
+                                <h4>근무시간 계획</h4>
+                            </div>
+                            <div class="btnBox moCol">
+                                <div class="formArea time">
+                                    <select class="md">
+                                        <option>09시</option>
+                                    </select>
+                                    <select class="md">
+                                        <option>30분</option>
+                                    </select>
+                                    <span class="dash">~</span>
+                                    <select class="md">
+                                        <option>18시</option>
+                                    </select>
+                                    <select class="md">
+                                        <option>30분</option>
+                                    </select>
+                                </div>
+                                <a href="#none" class="btn md outline-primary">일괄적용</a>
+                            </div>
+                        </div>
+
+                        <!-- 테이블 영역 -->
+                        <div class="tblList flex fdC">
+                            <table>
+                                <caption>
+                                    근무시간 계획
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 70px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 280px" />
+                                    <col style="width: 160px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">요일</th>
+                                        <th rowspan="2">근로일</th>
+                                        <th colspan="3">출퇴근 계획</th>
+                                        <th rowspan="2">일근태현황</th>
+                                        <th rowspan="2">비고</th>
+                                        <th rowspan="2">관리자확정</th>
+                                    </tr>
+                                    <tr>
+                                        <th>시작</th>
+                                        <th>종료</th>
+                                        <th>근로시간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>월</td>
+                                        <td>2025. 10. 27</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>화</td>
+                                        <td>2025. 10. 28</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr class="on">
+                                        <td>수</td>
+                                        <td>2025. 10. 29</td>
+                                        <td colspan="6">공휴일</td>
+                                    </tr>
+                                    <tr>
+                                        <td>목</td>
+                                        <td>2025. 10. 30</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>금</td>
+                                        <td>2025. 10. 31</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td>연차휴가(8h)</td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel red">미승인</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4">근로시간 소계</td>
+                                        <td>55h</td>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <i class="ico icoNodata">데이터없음</i>
+                                    <div class="resultTxt">등록된 데이터가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg outline-primary">저장</a>
+                            <a href="#none" class="btn lg primary-80">승인요청</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--#include file="./_footer.html"-->
+    </body>
+</html>
