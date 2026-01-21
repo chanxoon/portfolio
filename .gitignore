@@ -284,3 +284,15 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,node,visualstudiocode,eclipse
+
+
+# dependencies
+node_modules/
+
+# build
+dist/
+.cache/
+
+# misc
+.DS_Store
+.env

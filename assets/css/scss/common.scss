@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@import 'import/lib-fonts';
-@import 'base';
-@import 'import/typography';
-@import 'import/reset-css';
+@use 'import/lib-fonts';
+@use 'base';
+@use 'import/typography';
+@use 'import/reset-css';
 
 /* clearfix */
 .clearfix {

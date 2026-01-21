@@ -1,4 +1,2 @@
-markup/assets/css/lib/**/*
-markup/assets/js/lib/**/*
-markup/_coding_list/**/*
-markup/_guide/**/*
+/assets/css/lib/**/*
+/assets/js/lib/**/*

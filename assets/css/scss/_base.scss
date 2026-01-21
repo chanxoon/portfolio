@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@import 'import/variables';
-@import 'import/px-convert';
-@import 'import/mixin';
+@use 'import/variables';
+@use 'import/px-convert';
+@use 'import/mixin';
 
 :root {
     /* border */
